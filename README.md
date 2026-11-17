@@ -1,34 +1,34 @@
 # ⚔️ MobaIdle — MOBA Esports Manager
 
-A browser-based esports manager game, playable on mobile and desktop.
+Mobile-friendly, browser-based esports manager game.
 
-## Play
+## Status: V1 Alpha 2 (not the full V1 Mega Update)
 
-**GitHub Pages:** https://imjustneko.github.io/Moba-Idle/
+- 20 original fantasy champions with role, attack, defense and colored portrait placeholders
+- Blue/Red side choice, 4 hero bans and role-constrained 5v5 picks
+- Tactical observer with jungle/river, towers, role-based lane positions, kills, gold, Turtle/Lord events and match speed
+- Club economy, training, scouting, roster, persistent ELO and league tiers
+- Match results, seasonal ELO reset and localStorage save
+- Responsive UI for phones and desktop
 
-## Current build: v1 playable alpha
+**Still missing for full V1:** production-quality illustrated hero portraits, true pathfinding, minion combat, real towers and objective combat, advanced contracts and transfer market, asynchronous PvP server/matchmaking, multiplayer persistence and comprehensive balancing.
 
-- Persistent club economy and ELO rating, saved locally
-- Train your roster and scout
-- Ban/pick draft for Blue and Red teams
-- 5v5 animated match observer with lanes, kills and objectives
-- Ranked rewards, match history counters and replayable matches
+## Try it
 
-> This is a playable alpha, **not** the full planned V1 Mega Update. Advanced player contracts, scouting market, complete AI pathfinding, original hero portrait assets, realistic jungle and multi-season progression are not yet implemented.
+GitHub Pages (only after deployment is enabled and confirmed):
+https://imjustneko.github.io/Moba-Idle/
 
-## Deploy
+## GitHub Pages setup
 
-GitHub Actions workflow `.github/workflows/pages.yml` deploys the repository root to GitHub Pages on every push to `main`.
+Repository **Settings → Pages → Build and deployment → Source: GitHub Actions**. The workflow at `.github/workflows/pages.yml` deploys on each push to `main`. See the **Actions** tab for run status.
 
-**One-time setup:** GitHub repository → Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+## Files
 
-## Structure
+- `index.html` — app shell
+- `styles.css` — responsive esports interface
+- `game.js` — club, draft and simulation logic
+- `assets/logo.svg` — original SVG icon
+- `manifest.webmanifest` — web app metadata
+- `.github/workflows/pages.yml` — static site deployment
 
-- `index.html` — browser game
-- `.github/workflows/pages.yml` — deployment
-- `manifest.webmanifest` — app metadata
-- `assets/logo.svg` — project icon
-
-## Note
-
-This is an original prototype inspired by competitive MOBA gameplay. It does not include copyrighted Mobile Legends artwork or branding.
+All art and characters are original placeholders, not licensed game assets.
