@@ -1,0 +1,16 @@
+{
+  "name": "MobaIdle — Esports Manager",
+  "short_name": "MobaIdle",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08121d",
+  "theme_color": "#31bda3",
+  "icons": [
+    {
+      "src": "assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
